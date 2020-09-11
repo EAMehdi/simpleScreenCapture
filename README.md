@@ -1,7 +1,7 @@
 # simpleScreenCapture
 Personal Script using ffmpeg and PowerShell to record my screen and audio for my courses
 
-## How to install it
+## Installation
 
 1. Install FFmpeg
 
@@ -23,6 +23,6 @@ To verify if it works:
 4. Run `capture.ps1` 
 
 TO DO:
-- Better Implementation 
+- Better Implementation (e.g remove hardcoded path to save the video)
 - Add the possibility to automatically upload the videos online (Personal server, GDrive etc.) 
 - Simple GUI in WinForm (like Windows10Debloater)
