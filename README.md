@@ -22,7 +22,14 @@ To verify if it works:
 
 4. Run `capture.ps1` 
 
-TO DO:
+## TO DO:
 - Better Implementation (e.g remove hardcoded path to save the video)
 - Add the possibility to automatically upload the videos online (Personal server, GDrive etc.) 
 - Simple GUI in WinForm (like Windows10Debloater)
+
+
+### Personal Note:
+How to clear all variables without restarting PowerShell ISE
+
+
+`Remove-Variable * -ErrorAction SilentlyContinue`
