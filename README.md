@@ -12,6 +12,7 @@ https://github.com/adaptlearning/adapt_authoring/wiki/Installing-FFmpeg#installi
 https://github.com/rdp/screen-capture-recorder-to-video-windows-free
 
 To verify if it works:
+
 `ffmpeg -list_devices true -f dshow -i dummy`
 
 `ffmpeg -f dshow -i video="screen-capture-recorder" -f dshow -i audio="virtual-audio-capturer" output.mkv`
