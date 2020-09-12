@@ -1,4 +1,6 @@
-﻿Write-Output "`n-- Script Courses Recorder --`n"
+﻿utput "`n-- Script Courses Recorder --`n"
+
+function recordScreen{
 $course= Read-Host "Enter the course name`n"
 $currentdate = Get-Date -Format "dd-MM"
 $time = Read-Host "Time Limit in min (n=no)`n"
@@ -15,6 +17,7 @@ else{
    $time= [int]$time*60
 }
 
+Write-Output "There You Go"
 
 ffmpeg -f dshow -i video="screen-capture-recorder" -f dshow -i audio="virtual-audio-capturer" -t $time D:\$($filename).mkv
 
@@ -22,3 +25,7 @@ ffmpeg -f dshow -i video="screen-capture-recorder" -f dshow -i audio="virtual-au
 [console]::beep(1000,500)
 [console]::beep(1000,500)
 [console]::beep(1000,500)
+}
+
+recordScreen
+
